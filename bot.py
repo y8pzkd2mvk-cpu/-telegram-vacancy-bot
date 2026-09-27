@@ -91,7 +91,7 @@ async def publish(bot: Bot):
 
 
 async def main():
-    if BOT_TOKEN == "ВСТАВЬ_СЮДА_ТОКЕН_БОТА":
+    BOT_TOKEN = os.environ["BOT_TOKEN"]
         raise RuntimeError("Сначала вставь токен бота в BOT_TOKEN.")
 
     bot = Bot(BOT_TOKEN)
